@@ -1,0 +1,28 @@
+.padding-15tp {
+    padding: 15px 0px 15px 0px;
+    margin: 5px
+ }
+.blue-border {
+ border: 4px solid blue;
+}
+
+.box1 {
+ height: 200px;
+ overflow: scroll;        
+}
+
+.box2 {
+    height: 400px;
+    width: 400px;
+    overflow: hidden;
+
+}
+
+
+
+p {
+    border: 4px solid purple;
+    background-color: grey;
+    padding: 15px;
+    margin: 15px 30px 15px 30px;
+}
