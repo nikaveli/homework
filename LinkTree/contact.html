@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Nick Molina</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Nick Molina</h1>
+  <p>Contact Me</p> 
+</div>
+<div>
+    <ul class="breadcrumb">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cover.html">Cover Letter</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li>Contact Me</li>
+    </ul>
+</div>
+  
+<div class="container">
+  <div class="row">
+    <div class="col-sm-3">
+      <h3>Menu</h3>
+      <nav class="navbar navbar-expand-sm bg-light navbar-light">
+      <ul class="nav flex-column">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cover.html">Cover Letter</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="resume.html">Resume</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Me</a>
+          </li>
+      </ul></nav>
+    </div>
+    <div class="col-sm-6">
+      <div>
+		
+
+        <form class="form">
+           
+           <div id="input" class="column">
+               
+                   <div class="form-group">
+                       <label for="first name">First Name:</label>
+                       <input type="text" class="form-control" id="fName">
+                   </div>
+                   <div class="form-group">
+                       <label for="last name">Last Name:</label>
+                       <input type="text" class="form-control" id="lName">
+                   </div>
+
+                   <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+       
+                   <div class="form-group">
+                       <label for="phone">Phone Number:</label>
+                       <input type="text" class="form-control" id="pNumber" placeholder="(000) 123-4567"> 
+                   </div>
+       
+                   <br>
+
+                   <div class="form-group">
+                       <label for="age">Age Group:</label>
+                       <select class="form-control" id="age"> 
+                           <option value="18-20">18-20</option>
+                           <option value="21-29">21-29</option>
+                           <option value="30-39">30-39</option>
+                           <option value="40-49">40-49</option>
+                           <option value="50-59">50-59</option>
+                           <option value="60-65">60-65</option>
+                           <option value="65">Over 65</option>
+                       </select>
+                   </div>
+       
+                   <br>
+
+                   <div class="form-group">
+                       <label for="secret answer">Secret Answer to Confirm Identity:</label>
+                       <input type="password" class="form-control" id="secretA">
+                   </div>
+
+                   <br>
+                   <br>
+
+                   <div class="form-group">
+                       <label for="message">Leave a short Message:</label>
+                       <textarea class="form-control" id="mShort"></textarea>
+                   </div>
+
+               
+                       <label for="method">Preferred Contact Method:</label>
+
+                   <div class="form-check">
+                       <input class="form-check-input" type="radio" name="method" id="emailCheck" value="Email">					
+                       <label class="form-check-label" for="email">Email</label>		
+                   </div>	
+                   <div class="form-check">
+                       <input class="form-check-input" type="radio" name="method" id="phoneCheck" value="Phone Number">
+                       <label class="form-check-label" for="phone">Phone Number</label>
+                   </div>
+
+                   <div class="form-group">
+                       <label for="income">Choose Income Group:</label> 
+                       <select class="form-control" name="income" id="incomeSelect">
+                           <option value="less than $15,000">less than $15,000</option>
+                           <option value="$15,000-$25,000">$15,000-$35,000</option>
+                           <option value="$35,000-$50,000">$35,000-$50,000</option>
+                           <option value="$50,000 or more">$50,000 or more</option>
+                       </select>
+                   </div>
+
+            
+                   <button type="button" id="submitButton" onclick="submitForm()">Submit</button>
+               </div>
+               <br><div>
+                <h4>Your Information</h4>
+            </div>
+            <div>
+                <p>First Name</p>
+                <div id="firstInfo"></div>
+            </div>
+            <div>
+                <p>Last Name</p>
+                <div id="lastInfo"></div>
+            </div>
+            <div>
+                <p>Email</p>
+                <div id="emailInfo"></div>
+            </div>
+            <div>
+                <p>Age</p>
+                <div id="ageInfo"></div>
+            </div>
+            <div>
+                <p>Secret Answer</p>
+                <div id="secretInfo"></div>
+            </div>
+            <div>
+                <p>Message</p>
+                <div id="messageInfo"></div>
+            </div>
+            <div>
+                <p>Income</p>
+                <div id="incomeInfo"></div>
+            </div>
+            
+           </div>
+    </div>
+    
+  </div>
+</div>
+
+
+</body>
+<script src="script.js"></script>
+</html>
